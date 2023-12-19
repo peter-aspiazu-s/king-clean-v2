@@ -1,0 +1,41 @@
+.topcontactbar{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .topcontactbar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 7px 30px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        z-index: 1003;
+    }
+
+    .topcontactbar__container{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .topcontactbar__container-ico{
+        margin-right: 5px;
+    }
+    .topcontactbar__container-ico svg{
+        fill: aliceblue;
+    }
+
+    .topcontactbar__container-text a{
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all .3s;
+    }
+
+    .topcontactbar__container-text a:hover{
+        opacity: 0.8;
+    }
+}

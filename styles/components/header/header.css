@@ -1,0 +1,142 @@
+.headercomponent{
+    width: 100%;
+    height: 130px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1003;
+}
+
+.headercomponent__container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
+}
+
+.headercomponent__container-image{
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.headercomponent__size-image{
+    position: relative;
+    width: 110px;
+    height: 80px;
+}
+
+.headercomponent__container-icomenu{
+    width: 100%;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headercomponent__container-callme{
+    width: 100%;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.headercomponent__text-callme{
+    font-size: 17px;
+    color: #6a6a6a;
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+}
+.headercomponent__link-callme{
+    text-decoration: none;
+    color: #394aff;
+}
+
+@media screen and (min-width: 425px){
+    .headercomponent__text-callme{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .headercomponent{
+        background-color: transparent;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: fixed;
+        top: 42px;
+        z-index: 1002;
+        max-height: 190px;
+        transition: all 0.5s ease;
+    }
+    
+    .scrolled {
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 90px; /* Ajusta la altura deseada cuando se desplaza hacia abajo */
+    }
+
+    .headercomponent__container{
+        width: 900px;
+    }
+
+    .headercomponent__size-image{
+        width: 160px;
+        height: 120px;
+        transition: all .3s;
+    }
+    
+    .headercomponent__size-image-min{
+        width: 140px;
+        height: 80px;
+    }
+
+    .headercomponent__container-icomenu svg{
+        fill: white;
+    }
+
+    .headercomponent__container-callme{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    .headercomponent{
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headercomponent__container{
+        width: 1300px;
+    }
+
+    .headercomponent__container-image{
+        grid-column: 1 / 2;
+    }
+
+    .headercomponent__container-icomenu{
+        grid-column: 2 / 4;
+    }
+
+    .headercomponent__size-image{
+        width: 180px;
+        height: 140px;
+    }
+
+    .headercomponent__size-image-min{
+        width: 140px;
+        height: 80px;
+    }
+
+    .headercomponent__container-icomenu svg{
+        display: none;
+    }
+}
