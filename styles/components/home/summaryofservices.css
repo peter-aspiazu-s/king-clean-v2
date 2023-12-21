@@ -183,7 +183,7 @@
 
 @media screen and (min-width: 1440px){
     .summaryofservices__container{
-        width: 1100px;
+        width: 1150px;
     }
 
     .summaryofservices__service, .summaryofservices__service2{
@@ -222,7 +222,7 @@
     }
 
     .summaryofservices__image{
-        width: 350px;
+        width: 400px;
     }
 
     .summaryofservices__box-image{

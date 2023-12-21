@@ -15,9 +15,26 @@
 
 @import url(./components/home/summaryofservices.css);
 
+@import url(./components/home/experiencecounter.css);
+@import url(./components/home/serviceprogressbar.css);
+@import url(./components/home/experiencepercentage.css);
+@import url(./components/home/sectionservicecontainer.css);
+@import url(./components/home/servicecomponent.css);
+@import url(./components/home/clientstestimonial.css);
+@import url(./components/home/recommendationvideo.css);
+@import url(./components/home/sliderecommendationvideo.css);
+
+
+@import url(./components/services/servicescomponent.css);
+@import url(./components/services/infoServiceComponet.css);
+@import url(./components/services/slideServiceComponent.css);
+
 @import url(./components/footer/calltoactionfooter.css);
 @import url(./components/footer/contactfooter.css);
 @import url(./components/footer/copyrightfooter.css);
 @import url(./components/footer/footercomponents.css);
 @import url(./components/footer/formfooter.css);
 @import url(./components/footer/menufooter.css);
+
+
+@import url(./components/whatsappButton/whatsappbutton.css);

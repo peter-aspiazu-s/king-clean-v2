@@ -1,67 +1,81 @@
 import { NextPage } from "next";
 import { Layout } from '../layout/Layout';
-import { QuickAccessToServices } from '../components/home/quickAccessToServices/QuickAccessToServices';
-import { CustomerCount } from '../components/home/customerCount/CustomerCount';
 import { ExperiencePercentage } from '../components/home/experiencePercentage/ExperiencePercentage';
-import { WorkDone } from '../components/workDone/WorkDone';
-import { CustomerTestimonial } from '../components/home/customerTestimonial/CustomerTestimonial';
-import { Maps } from '../components/maps/Maps';
-import { ContactComponent } from '../components/contact/ContactComponent';
 import { BannerMainComponent } from '../components/main/BannerMainComponent';
 import { ExperienceComponent } from '../components/home/experience/ExperienceComponent';
 import { SummaryOfServices } from '../components/home/summaryOfServices/SummaryOfServices';
+import { ExperienceCounter } from '../components/home/experienceCounter/ExperienceCounter';
+import { SectionServiceContainer } from '../components/home/sectionServiceComponent/SectionServiceContainer';
+import { SlideRecommendationVideo } from '../components/home/slideRecommendationVideo/SlideRecommendationVideo';
+import { useState } from "react";
+import { RecommendationVideo } from '../components/home/recommendationVideo/RecommendationVideo';
+import { ClientsTestimonial } from '../components/home/clientsTestimonial/ClientsTestimonial';
 
 
-
-const mainSlideInfo = [
+const imgArr = [
   {
-    img: 'img1',
-    title: 'Titulo 1',
-    desc: 'Descripción 1'
+    img: '/images/img-video1.png',
+    alt: 'video image',
+    link: '/images/video1.mp4'
   },
   {
-    img: 'img2',
-    title: 'Titulo 2',
+    img: '/images/img-video2.png',
+    alt: 'video image',
+    link: '/images/video2.mp4'
   },
   {
-    img: 'img3',
-    title: 'Titulo 3',
-    desc: 'Descripción 3'
+    img: '/images/img-video3.png',
+    alt: 'video image',
+    link: '/images/video3.mp4'
   },
+  {
+    img: '/images/img-video4.png',
+    alt: 'video image',
+    link: '/images/video4.mp4'
+  },
+  {
+    img: '/images/img-video5.png',
+    alt: 'video image',
+    link: '/images/video5.mp4'
+  }
 ]
 
+
 const HomePage: NextPage = () => {
+
+  const [
+    linkRecommendationVideo, 
+    setLinkRecommendationVideo
+  ] = useState('/images/video1.mp4');
+
   return (
     <Layout
       title="King clean"
       description="King clean pioneros en limpieza: tu elección más acertada. Brindamos servicios de lavado de muebles, vehículos, alfombras, colchones y cojines"
       keywords="lavado de muebles, limpieza de muebles, lavado de vehículos, limpieza de vehículos, lavado de cojines, limpieza de cojines, lavado de alfombras, limpieza de alfombras"
     >
-      {/* headerInfo será un arreglo con objetos dentro los cuales constaran de imagen, titulo y opcional una descripcion o subtitle */}
       <BannerMainComponent image="/images/profesiona-cleaning-king-clean-1.webp" imageTitle="Imagen de profesional de la limpieza" />
 
       <ExperienceComponent />
 
-      {/* copiar de la página https://www.aseobrissaxpress.com/index.html */}
       <SummaryOfServices />
 
-    {/* animacion de números aumentando hasta llegar al valor final que corresponda */}
-    <CustomerCount />
+      <ExperienceCounter />
 
-    {/* animacion de barra llenandose hasta llegar al porcentaje que corresponda */}
-    <ExperiencePercentage />
+      <ExperiencePercentage />
 
-    {/* colocar el componente de rosari-construction de un acceso rápido a los servicios */}
-    <QuickAccessToServices />
+      <SectionServiceContainer />
 
-    <WorkDone />
+      <ClientsTestimonial />
 
-    {/* ver si cambio este componente a Clients y en el slide con los testimonios y las fotos de los clientes si colocarle CustomerTestimonial */}
-    <CustomerTestimonial />
-
-    <Maps />
-
-    <ContactComponent />
+      <RecommendationVideo 
+        key={linkRecommendationVideo}
+        linkVideo={linkRecommendationVideo} 
+      />
+      <SlideRecommendationVideo
+        imgArr={imgArr} 
+        setRecommendationVideoHome={setLinkRecommendationVideo}  
+      />
 
     </Layout>
   )

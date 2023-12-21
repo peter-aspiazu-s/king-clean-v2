@@ -54,18 +54,18 @@ export const ContactFooter: FC = () => {
                     </div>
                     <div className='contactfooter__infocontact-text-container'>
                         <div className={`${dacing_script.className} contactfooter__infocontact-text-title`}>Contacto</div>
-                        <div className='contactfooter__infocontact-text'>Celular: <a className='contactfooter__infocontact-text-link' href="#">0989411325</a></div>
+                        <div className='contactfooter__infocontact-text'>Celular: <a className='contactfooter__infocontact-text-link' href="https://wa.link/erheet" target='_blank'>0989411325</a></div>
                         {/* <div className='contactfooter__infocontact-text'>Fax: <span>716-684-0751</span></div> */}
-                        <div className='contactfooter__infocontact-text'>Email: <a className='contactfooter__infocontact-text-link' href="#">jordycontreras597@gmail.com</a></div>
+                        <div className='contactfooter__infocontact-text'>Email: <a className='contactfooter__infocontact-text-link' href="mailto:jordycontreras597@gmail.com">jordycontreras597@gmail.com</a></div>
                     </div>
                 </div>
 
                 <div className='contactfooter__socialmedia'>
-                    <a href="#">
+                    <a href="https://www.facebook.com/profile.php?id=100063281676296" target='_blank'>
                         <svg className='contactfooter__socialmedia-facebook' aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg>
                     </a>
                     {/* BUSCAR ICONO SVG DE INSTAGRAM */}
-                    <a href="#">
+                    <a href="https://www.instagram.com/king_cleangye?igsh=NGVhN2U2NjQ0Yg==" target='_blank'>
                         <svg 
                             fill="#ffffff" 
                             height="60px" 

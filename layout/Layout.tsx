@@ -4,6 +4,8 @@ import Head from "next/head";
 import { TopContactBar } from '../components/topContactBar/TopContactBar';
 import { HeaderComponent } from '../components/header/HeaderComponent';
 import { FooterComponents } from '../components/footer/FooterComponents';
+import { LoadingBar } from '../components/loadingBar/LoadingBar';
+import { WhatsAppButton } from '../components/whatsAppButton/WhatsAppButton';
 
 
 interface PropsLayout {
@@ -23,7 +25,9 @@ export const Layout: FC<PropsLayout> = ({title, description, keywords, children}
                 <title>{title}</title>
                 <meta name="description" content={description}  />
                 <meta name="keywords" content={keywords}  />
+                <link rel="shortcut icon" href="/images/logo.png" />
             </Head>
+            <LoadingBar />
             <TopContactBar />
             <HeaderComponent isOpen={isOpen} setIsOpen={setIsOpen} />
 
@@ -31,6 +35,8 @@ export const Layout: FC<PropsLayout> = ({title, description, keywords, children}
             {children}
 
             <FooterComponents />
+
+            <WhatsAppButton />
         </>
     )
 }

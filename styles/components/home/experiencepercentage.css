@@ -1,0 +1,55 @@
+.experiencepercentage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.experiencepercentage__container{
+    width: 280px;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experiencepercentage__progressbar{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 375px){
+    .experiencepercentage__container{
+        width: 320px;
+    }   
+}
+
+@media screen and (min-width: 425px){
+    .experiencepercentage__container{
+        width: 380px;
+    }   
+}
+
+@media screen and (min-width: 768px){
+    .experiencepercentage__container{
+        width: 600px;
+        justify-content: center;
+        gap: 20px;
+    }   
+
+    .experiencepercentage__progressbar{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .experiencepercentage__container{
+        width: 900px;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .experiencepercentage__container{
+        width: 1100px;
+        padding: 50px 0;
+    }
+}

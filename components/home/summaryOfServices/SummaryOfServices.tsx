@@ -18,7 +18,7 @@ export const SummaryOfServices: FC = () => {
                     </div>
                     <div className='summaryofservices__description'>La solución perfecta para limpieza en tu hogar desde alfombras hasta pisos.</div>
                     <div className='summaryofservices__icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-160v-320H80l400-360 160 144v-104h120v212l120 108H760v320H520v-240h-80v240H200Zm80-80h80v-240h240v240h80v-312L480-732 280-552v312Zm80-240h240-240Zm40-79h160q0-32-24-52.5T480-632q-32 0-56 20.5T400-559Z"/></svg>
                     </div>
                 </div>
 
@@ -68,11 +68,11 @@ export const SummaryOfServices: FC = () => {
                     </div>
                     <div className='summaryofservices__title2'>Eliminación de olores</div>
                     <div className='summaryofservices__decoration2'>
-                        <div className='summaryofservices__decoration-lead'>
-                            {/* barra ploma */}
-                        </div>
                         <div className='summaryofservices__decoration-blue'>
                             {/* barra azul */}
+                        </div>
+                        <div className='summaryofservices__decoration-lead'>
+                            {/* barra ploma */}
                         </div>
                     </div>
                     <div className='summaryofservices__description2'>Equipos y complementos que te ayudaran a eliminar de manera efectiva olores.</div>
@@ -84,11 +84,11 @@ export const SummaryOfServices: FC = () => {
                     </div>
                     <div className='summaryofservices__title2'>Servicio a domicilio</div>
                     <div className='summaryofservices__decoration2'>
-                        <div className='summaryofservices__decoration-lead'>
-                            {/* barra ploma */}
-                        </div>
                         <div className='summaryofservices__decoration-blue'>
                             {/* barra azul */}
+                        </div>
+                        <div className='summaryofservices__decoration-lead'>
+                            {/* barra ploma */}
                         </div>
                     </div>
                     <div className='summaryofservices__description2'>Solo contáctenos y uno de nuestros equipos le apoyará.</div>
@@ -100,11 +100,11 @@ export const SummaryOfServices: FC = () => {
                     </div>
                     <div className='summaryofservices__title2'>Servicio de lavado</div>
                     <div className='summaryofservices__decoration2'>
-                        <div className='summaryofservices__decoration-lead'>
-                            {/* barra ploma */}
-                        </div>
                         <div className='summaryofservices__decoration-blue'>
                             {/* barra azul */}
+                        </div>
+                        <div className='summaryofservices__decoration-lead'>
+                            {/* barra ploma */}
                         </div>
                     </div>
                     <div className='summaryofservices__description2'>Te ayudamos a lavar tus muebles, pisos, cojineria y mucho más.</div>

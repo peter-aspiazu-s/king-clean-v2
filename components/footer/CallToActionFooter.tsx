@@ -37,7 +37,7 @@ export const CallToActionFooter: FC = () => {
     return (
         <div className='calltoactionfooter'>
             <div className={`calltoactionfooter__container ${isVisible ? 'calltoactionfooter__container-visible' : ''}`} ref={containerRef}>
-                Por mayor información sobre los servicios brindados, <span>contáctanos</span> al <a href="#">0989411325</a>. Respondemos a tus inquietudes sobre nuestros servicios!
+                Por mayor información sobre los servicios brindados, <span>contáctanos</span> al <a href="https://wa.link/erheet" target='_blank'>0989411325</a>. Respondemos a tus inquietudes sobre nuestros servicios!
             </div>
             <div className='calltoactionfooter__logo'>
                 <Image src='/images/logo.png' alt='Imagen de logo' layout='fill' />

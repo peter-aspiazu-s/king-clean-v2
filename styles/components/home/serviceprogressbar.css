@@ -1,0 +1,32 @@
+.serviceprogressbar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .serviceprogressbar__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .serviceprogressbar__name {
+    font-weight: bold;
+  }
+  
+  .serviceprogressbar__progress-bar {
+    height: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .serviceprogressbar__progress {
+    height: 100%;
+    background-color: #394aff; /* Cambia este color para adaptarlo al diseño de tu aplicación */
+  }
+
+  @media screen and (min-width: 1440px){
+    .serviceprogressbar__progress-bar {
+        height: 30px;
+    }
+  }
+  
