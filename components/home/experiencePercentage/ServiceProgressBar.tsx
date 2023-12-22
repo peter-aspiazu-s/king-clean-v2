@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 
 interface ServiceProgressBarProps {
     serviceName: string;
@@ -7,14 +7,30 @@ interface ServiceProgressBarProps {
 
 export const ServiceProgressBar: FC<ServiceProgressBarProps> = ({serviceName, percentage}) => {
 
-    const [progressWidth, setProgressWidth] = useState(0);
+  const [progressWidth, setProgressWidth] = useState(0);
+  const progressBarRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        setProgressWidth(percentage);
-    }, [percentage]);
+  const fillProgressBar = () => {
+      if (progressBarRef.current) {
+          const { top, bottom } = progressBarRef.current.getBoundingClientRect();
+          const isVisible = (top < window.innerHeight && bottom >= 0);
+          if (isVisible) {
+              setProgressWidth(percentage);
+          }
+      }
+  };
+
+  useEffect(() => {
+      window.addEventListener('scroll', fillProgressBar);
+      fillProgressBar(); // Comprobación inicial al cargar la página
+
+      return () => {
+          window.removeEventListener('scroll', fillProgressBar);
+      };
+  }, []);
 
   return (
-    <div className="serviceprogressbar">
+    <div className="serviceprogressbar" ref={progressBarRef}>
       <div className="serviceprogressbar__info">
         <span className="serviceprogressbar__name">{serviceName}</span>
         <span className="serviceprogressbar__percentage">{progressWidth}%</span>

@@ -3,6 +3,7 @@ import { ServiceProgressBar } from './ServiceProgressBar';
 
 
 export const ExperiencePercentage: FC = () => {
+
   return (
     <div className='experiencepercentage'>
       <div className='experiencepercentage__container'>
