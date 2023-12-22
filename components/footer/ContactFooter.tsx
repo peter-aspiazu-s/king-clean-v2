@@ -54,7 +54,7 @@ export const ContactFooter: FC = () => {
                     </div>
                     <div className='contactfooter__infocontact-text-container'>
                         <div className={`${dacing_script.className} contactfooter__infocontact-text-title`}>Contacto</div>
-                        <div className='contactfooter__infocontact-text'>Celular: <a className='contactfooter__infocontact-text-link' href="https://wa.link/erheet" target='_blank'>0989411325</a></div>
+                        <div className='contactfooter__infocontact-text'>Celular: <a className='contactfooter__infocontact-text-link' href="https://wa.link/ft9qa3" target='_blank'>0996090342</a></div>
                         {/* <div className='contactfooter__infocontact-text'>Fax: <span>716-684-0751</span></div> */}
                         <div className='contactfooter__infocontact-text'>Email: <a className='contactfooter__infocontact-text-link' href="mailto:jordycontreras597@gmail.com">jordycontreras597@gmail.com</a></div>
                     </div>

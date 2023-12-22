@@ -50,7 +50,7 @@ export const HeaderComponent: FC<Props> = ({isOpen, setIsOpen}) => {
                 </div>
                 <div className="headercomponent__container-callme">
                     <p className="headercomponent__text-callme">Llama ahora!
-                        <a href="https://wa.link/erheet" target='_blank' className="headercomponent__link-callme">0989411325</a>
+                        <a href="https://wa.link/ft9qa3" target='_blank' className="headercomponent__link-callme">0996090342</a>
                     </p>
                 </div>
             </div>
